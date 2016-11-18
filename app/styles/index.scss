@@ -32,6 +32,9 @@
 .swiper-header {
   height: 400px;
   padding: 0;
+  @media screen and (max-width: 768px) {
+    height: 250px;
+  }
   .swiper-slide {
     .bg {
       width: 100%;

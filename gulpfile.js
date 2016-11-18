@@ -11,7 +11,7 @@ const reload = browserSync.reload;
 
 var dev = true;
 
-gulp.task('github', ['build'], () => {
+gulp.task('github', () => {
   return gulp.src('dist')
     .pipe($.subtree())
     .pipe($.clean());

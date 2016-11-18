@@ -1,13 +1,25 @@
 $(function () {
   var swiper = new Swiper('.swiper-container', {
     pagination: '.swiper-pagination',
-    paginationClickable: true,
-    loop: true,
+    grabCursor: true,
     centeredSlides: true,
-    autoplay: 2500,
-    autoplayDisableOnInteraction: false,
+    paginationClickable: true,
+    initialSlide: 1,
+    // autoplay: 5000,
+    loop: true,
+    spaceBetween: 40,
+    keyboardControl: true,
+    autoplayDisableOnInteraction: true,
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-    spaceBetween: 0
+    slidesPerView: 'auto',
+    effect: 'coverflow',
+    coverflow: {
+      rotate: 40,
+      stretch: 0,
+      depth: 10,
+      modifier: 1,
+      slideShadows: true
+    }
   });
 });

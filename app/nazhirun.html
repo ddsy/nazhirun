@@ -2,7 +2,8 @@
 <html class="no-js" lang="">
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta name="description" content="纳之润,普洱茶,朕云堂">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>纳之润.茶</title>
 
@@ -32,14 +33,12 @@
   <!-- build:css styles/nazhirun.css -->
   <link rel="stylesheet" href="styles/nazhirun.css">
   <!-- endbuild -->
-
-  <!-- build:js scripts/vendor/modernizr.js -->
-  <script src="/bower_components/modernizr/modernizr.js"></script>
-  <!-- endbuild -->
 </head>
 <body>
 <nav class="header navbar navbar-default" role="navigation">
   <div class="container animated fadeIn">
+    <div class="bg bg1"></div>
+    <div class="bg bg2"></div>
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -54,152 +53,57 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse row" id="navbar_collapse_content">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/" class="hvr-underline-from-center">首页</a></li>
-        <li><a href="#" class="hvr-underline-from-center">纳之润</a></li>
+        <li><a href="index.html" class="hvr-underline-from-center">首页</a></li>
+        <li><a href="nazhirun.html" class="hvr-underline-from-center">纳之润</a></li>
         <li><a href="#" class="hvr-underline-from-center">企业动态</a></li>
         <li><a href="#" class="hvr-underline-from-center">关于我们</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<div class="container animated fadeIn">
+<div id="main" class="container animated fadeIn">
+  <div class="row top">
+    <div class="bg"></div>
+  </div>
   <div class="row">
-    <div class="col-md-12 swiper-header">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="bg">
-              <img src="images/index/swiper-1.png"/>
-            </div>
+    <div id="items" class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="bg">
+            <img src="images/nazhirun/chanpingzhanshi.png"/>
+            <div class="mask"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="bg">
-              <img src="images/index/lorempixel-1.jpg"/>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="bg">
-              <img src="images/index/lorempixel-2.jpg"/>
-            </div>
+          <div class="content">
+            <div class="desc">产品展示</div>
+            <a class="btn btn-default">查看详情</a>
           </div>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next glyphicon glyphicon-chevron-right"></div>
-        <div class="swiper-button-prev glyphicon glyphicon-chevron-left"></div>
-      </div>
-    </div>
-  </div>
-  <div class="row chandi-title">
-    <div class="col-md-4 col-md-offset-4">
-      <img src="images/index/chanyechandi.png" alt="img">
-    </div>
-  </div>
-  <div class="row chandi-content">
-    <div class="col-md-4 col-xs-12 col1">
-      <div class="ih-item square effect6 from_top_and_bottom"><a href="#">
-        <div class="img">
-          <img src="images/index/chandi-0.png">
-        </div>
-        <div class="info">
-          <h3>个人茶园</h3>
-          <p>用心做品质好茶, 确保每一颗茶叶的健康和安全</p>
-        </div>
-      </a></div>
-    </div>
-    <div class="col-md-8 col-xs-12 col2">
-      <div class="container-fluid">
-        <div class="row row1">
-          <div class="col-md-12 col-xs-12">
-            <div class="ih-item square effect6 from_top_and_bottom"><a href="#">
-              <div class="img">
-                <img src="images/index/chandi-1.png">
-              </div>
-              <div class="info">
-                <h3>茶叶制作</h3>
-                <p>用心做品质好茶, 确保每一颗茶叶的健康和安全</p>
-              </div>
-            </a></div>
+        <div class="swiper-slide">
+          <div class="bg">
+            <img src="images/nazhirun/shengtaichayuan.png"/>
+            <div class="mask"></div>
+          </div>
+          <div class="content">
+            <div class="desc">纳之润生态茶园</div>
+            <a class="btn btn-default">查看详情</a>
           </div>
         </div>
-        <div class="row row2">
-          <div class="col-md-6 col-xs-12">
-            <div class="ih-item square effect6 from_top_and_bottom"><a href="#">
-              <div class="img">
-                <img src="images/index/chandi-2.png">
-              </div>
-              <div class="info">
-                <h3>茶叶制作</h3>
-                <p>用心做品质好茶, 确保每一颗茶叶的健康和安全</p>
-              </div>
-            </a></div>
+        <div class="swiper-slide">
+          <div class="bg">
+            <img src="images/nazhirun/shengtaianquan.png"/>
+            <div class="mask"></div>
           </div>
-          <div class="col-md-6 col-xs-12">
-            <div class="ih-item square effect6 from_top_and_bottom"><a href="#">
-              <div class="img">
-                <img src="images/index/chandi-3.png">
-              </div>
-              <div class="info">
-                <h3>茶叶制作</h3>
-                <p>用心做品质好茶, 确保每一颗茶叶的健康和安全</p>
-              </div>
-            </a></div>
+          <div class="content">
+            <div class="desc">茶园生态安全</div>
+            <a class="btn btn-default">查看详情</a>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="row zhizuo">
-    <div class="col-md-12 col-xs-12">
-      <div class="container-fluid">
-        <div class="row title">
-          <div class="col-md-10 col-md-offset-1">
-            <h2 class="text-center">诚心诚意做好茶</h2>
-            <h4 class="text-center">用心做品质好茶, 确保每一颗茶叶的健康和安全, 我们再国内外市场上赢得了良好的美誉度!</h4>
-          </div>
-        </div>
-        <div class="row content">
-          <div class="col-md-10 col-md-offset-1">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-sm-6 col-md-4">
-                  <div class="thumbnail">
-                    <img src="images/index/zhizuo-1.png">
-                    <div class="caption">
-                      <p class="text-center">选择茶箐优良品种,良好的栽培<br>和管理</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <div class="thumbnail">
-                    <img src="images/index/zhizuo-2.png">
-                    <div class="caption">
-                      <p class="text-center">把握茶箐采摘时机与方法, 采得茶箐<br>要妥善处理</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <div class="thumbnail">
-                    <img src="images/index/zhizuo-3.png">
-                    <div class="caption">
-                      <p class="text-center">晒青 > 摇青 > 炒青 > 揉捻 > 包捻<br> > 烘干 > 挑梗 > 包装</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row desc">
-    <div class="col-md-4 col-md-offset-7">
-      <h2><span class="glyphicon glyphicon-heart"></span>心始终做好每一道工序</h2>
-      <p>
-        花茶有限责任公司一直秉承 "诚信为本" 的古训, 以 "金般品质, 百年承诺" 为经营理念, 以 " 打造中国茶叶第一品牌, 弘扬国饮" 为目标。 1994年在福建重新建立了自己的生产基地-----闽东xxxx茶叶有限公司。 xxxx茉莉花茶选用上等原料并采用独特的加工工艺, 以其 "汤清, 味浓, 入口芳香, 回味无穷" 的特色, 深得国内外茶客的欢迎, 使得老字号蜚声海内外。
-      </p>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next glyphicon glyphicon-menu-right"></div>
+      <div class="swiper-button-prev glyphicon glyphicon-menu-left"></div>
     </div>
   </div>
 </div>
@@ -256,8 +160,10 @@
 <!-- build:js scripts/vendor.js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <script src="/bower_components/modernizr/modernizr.js"></script>
-<script src="/bower_components/handlebars/handlebars.js"></script>
-<script src="/bower_components/swiper/dist/js/swiper.jquery.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/vendor/swiper.js -->
+<script src="/bower_components/swiper/dist/js/swiper.js"></script>
 <!-- endbuild -->
 
 <!-- build:js scripts/plugins.js -->

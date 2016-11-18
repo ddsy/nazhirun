@@ -17,6 +17,7 @@
 .swiper-container {
   .swiper-pagination-bullet {
     background: #fff;
+    border: 1px solid #ccc;
     opacity: 1;
     width: 16px;
     height: 16px;
@@ -113,7 +114,7 @@
         display: block;
         background: url("../images/header-bg.png") no-repeat;
         background-size: 100% 100%;
-        animation: bg-move 60s linear 0s infinite;
+        animation: bg-move 100s linear 0s infinite;
         &.bg1 {
           left: -100%;
         }
