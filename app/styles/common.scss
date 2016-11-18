@@ -109,19 +109,8 @@
     .container {
       position: relative;
       height: 180px;
-      overflow: hidden;
-      .bg {
-        display: block;
-        background: url("../images/header-bg.png") no-repeat;
-        background-size: 100% 100%;
-        animation: bg-move 100s linear 0s infinite;
-        &.bg1 {
-          left: -100%;
-        }
-        &.bg2 {
-          left: 0;
-        }
-      }
+      background: url("../images/header-bg.png") no-repeat;
+      background-size: 100% 100%;
       .navbar-header {
         margin-top: 110px;
       }

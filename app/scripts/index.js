@@ -2,10 +2,6 @@ $(function () {
   var swiper = new Swiper('.swiper-container', {
     pagination: '.swiper-pagination',
     paginationClickable: true,
-    effect : 'fade',
-    fade: {
-      crossFade: false,
-    },
     loop: true,
     centeredSlides: true,
     autoplay: 3000,
