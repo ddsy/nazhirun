@@ -42,12 +42,9 @@
         "single"
       ]
     }
-<<<<<<< HEAD
   },
   "dependencies": {
     "gulp-clean": "^0.3.2",
     "gulp-subtree": "^0.1.0"
-=======
->>>>>>> 43742b560b7934d34e6299af48c1dedfc2be3f56
   }
 }
