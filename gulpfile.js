@@ -11,12 +11,15 @@ const reload = browserSync.reload;
 
 var dev = true;
 
+<<<<<<< HEAD
 gulp.task('github', ['build'], () => {
   return gulp.src('dist')
     .pipe($.subtree())
     .pipe($.clean());
 });
 
+=======
+>>>>>>> 43742b560b7934d34e6299af48c1dedfc2be3f56
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.scss')
     .pipe($.plumber())
