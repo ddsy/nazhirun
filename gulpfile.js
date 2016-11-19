@@ -18,7 +18,7 @@ gulp.task('github', () => {
 });
 
 gulp.task('styles', () => {
-  return gulp.src('app/styles/*.scss')
+  return gulp.src('app/styles/**/*.scss')
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
     .pipe($.sass.sync({
@@ -83,7 +83,8 @@ gulp.task('fonts', () => {
 gulp.task('extras', () => {
   return gulp.src([
     'app/*',
-    '!app/*.html'
+    '!app/*.html',
+    'app/*plugins/**/*',
   ], {
     dot: true
   }).pipe(gulp.dest('dist'));

@@ -5,6 +5,7 @@ $(function () {
     loop: true,
     centeredSlides: true,
     autoplay: 3000,
+    speed: 1000,
     autoplayDisableOnInteraction: false,
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',

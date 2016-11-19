@@ -23,12 +23,18 @@
   <link rel="stylesheet" href="/bower_components/animate.css/source/fading_entrances/fadeIn.css">
   <!-- endbuild -->
 
-  <!-- build:css styles/plugins/swiper.css -->
-  <link rel="stylesheet" href="/bower_components/swiper/dist/css/swiper.css">
+  <!-- build:js scripts/vendor.js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
 
-  <!-- build:css styles/nazhirun.css -->
-  <link rel="stylesheet" href="styles/nazhirun.css">
+  <!-- build:js scripts/vendor/lightgallery.js -->
+  <script src="/bower_components/lightgallery/lib/lightgallery-all.js"></script>
+  <script src="/bower_components/lightgallery/lib/picturefill.min.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:css styles/chayuan-gallery.css -->
+  <link rel="stylesheet" href="styles/chayuan-gallery.css">
   <!-- endbuild -->
 </head>
 <body>
@@ -57,49 +63,64 @@
   </div><!-- /.container-fluid -->
 </nav>
 <div id="main" class="container animated fadeIn">
-  <div class="row top">
-    <div class="bg"></div>
-  </div>
   <div class="row">
-    <div id="items" class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="bg">
-            <img src="images/nazhirun/chanpingzhanshi.png"/>
-            <div class="mask"></div>
-          </div>
-          <div class="content">
-            <div class="desc">产品展示</div>
-            <a class="btn btn-default">查看详情</a>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="bg">
-            <img src="images/nazhirun/shengtaichayuan.png"/>
-            <div class="mask"></div>
-          </div>
-          <div class="content">
-            <div class="desc">纳之润生态茶园</div>
-            <a class="btn btn-default" href="chayuan-gallery.html">查看详情</a>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="bg">
-            <img src="images/nazhirun/shengtaianquan.png"/>
-            <div class="mask"></div>
-          </div>
-          <div class="content">
-            <div class="desc">茶园生态安全</div>
-            <a class="btn btn-default">查看详情</a>
-          </div>
-        </div>
+    <h1 class="page-header col-md-12">纳之润生态茶园</h1>
+  </div>
+  <div id="lightgallery" class="row">
+    <a class="col-md-4" href="images/chayuan/1-1600.jpg" data-sub-html="<h2>布朗生态茶园1</h2><p>生态茶园坐落于安溪县湖头镇半山村，地处北纬：N25，基地土质多为红土壤，PH值在4.5 ~ 6.0，土层深厚。</p>">
+      <img class="img-responsive" src="images/chayuan/thumb-1.jpg" />
+      <div class="gallery-poster">
+        <img src="images/zoom.png">
       </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- Add Arrows -->
-      <div class="swiper-button-next glyphicon glyphicon-menu-right"></div>
-      <div class="swiper-button-prev glyphicon glyphicon-menu-left"></div>
-    </div>
+    </a>
+    <a class="col-md-4" href="images/chayuan/13-1600.jpg" data-sub-html="<h2>布朗生态茶园2</h2><p>生态茶园坐落于安溪县湖头镇半山村，地处北纬：N25，基地土质多为红土壤，PH值在4.5 ~ 6.0，土层深厚。</p>">
+      <img class="img-responsive" src="images/chayuan/thumb-13.jpg" />
+      <div class="gallery-poster">
+        <img src="images/zoom.png">
+      </div>
+    </a>
+    <a class="col-md-4" href="images/chayuan/4-1600.jpg" data-sub-html="<h2>布朗生态茶园3</h2><p>生态茶园坐落于安溪县湖头镇半山村，地处北纬：N25，基地土质多为红土壤，PH值在4.5 ~ 6.0，土层深厚。</p>">
+      <img class="img-responsive" src="images/chayuan/thumb-4.jpg" />
+      <div class="gallery-poster">
+        <img src="images/zoom.png">
+      </div>
+    </a>
+    <a class="col-md-4" href="images/chayuan/1-1600.jpg" data-sub-html="<h2>布朗生态茶园1</h2><p>生态茶园坐落于安溪县湖头镇半山村，地处北纬：N25，基地土质多为红土壤，PH值在4.5 ~ 6.0，土层深厚。</p>">
+      <img class="img-responsive" src="images/chayuan/thumb-1.jpg" />
+      <div class="gallery-poster">
+        <img src="images/zoom.png">
+      </div>
+    </a>
+    <a class="col-md-4" href="images/chayuan/13-1600.jpg" data-sub-html="<h2>布朗生态茶园2</h2><p>生态茶园坐落于安溪县湖头镇半山村，地处北纬：N25，基地土质多为红土壤，PH值在4.5 ~ 6.0，土层深厚。</p>">
+      <img class="img-responsive" src="images/chayuan/thumb-13.jpg" />
+      <div class="gallery-poster">
+        <img src="images/zoom.png">
+      </div>
+    </a>
+    <a class="col-md-4" href="images/chayuan/4-1600.jpg" data-sub-html="<h2>布朗生态茶园3</h2><p>生态茶园坐落于安溪县湖头镇半山村，地处北纬：N25，基地土质多为红土壤，PH值在4.5 ~ 6.0，土层深厚。</p>">
+      <img class="img-responsive" src="images/chayuan/thumb-4.jpg" />
+      <div class="gallery-poster">
+        <img src="images/zoom.png">
+      </div>
+    </a>
+    <a class="col-md-4" href="images/chayuan/1-1600.jpg" data-sub-html="<h2>布朗生态茶园1</h2><p>生态茶园坐落于安溪县湖头镇半山村，地处北纬：N25，基地土质多为红土壤，PH值在4.5 ~ 6.0，土层深厚。</p>">
+      <img class="img-responsive" src="images/chayuan/thumb-1.jpg" />
+      <div class="gallery-poster">
+        <img src="images/zoom.png">
+      </div>
+    </a>
+    <a class="col-md-4" href="images/chayuan/13-1600.jpg" data-sub-html="<h2>布朗生态茶园2</h2><p>生态茶园坐落于安溪县湖头镇半山村，地处北纬：N25，基地土质多为红土壤，PH值在4.5 ~ 6.0，土层深厚。</p>">
+      <img class="img-responsive" src="images/chayuan/thumb-13.jpg" />
+      <div class="gallery-poster">
+        <img src="images/zoom.png">
+      </div>
+    </a>
+    <a class="col-md-4" href="images/chayuan/4-1600.jpg" data-sub-html="<h2>布朗生态茶园3</h2><p>生态茶园坐落于安溪县湖头镇半山村，地处北纬：N25，基地土质多为红土壤，PH值在4.5 ~ 6.0，土层深厚。</p>">
+      <img class="img-responsive" src="images/chayuan/thumb-4.jpg" />
+      <div class="gallery-poster">
+        <img src="images/zoom.png">
+      </div>
+    </a>
   </div>
 </div>
 <footer class="footer">
@@ -152,15 +173,6 @@
   </div>
 </footer>
 
-<!-- build:js scripts/vendor.js -->
-<script src="/bower_components/jquery/dist/jquery.js"></script>
-<script src="/bower_components/modernizr/modernizr.js"></script>
-<!-- endbuild -->
-
-<!-- build:js scripts/vendor/swiper.js -->
-<script src="/bower_components/swiper/dist/js/swiper.js"></script>
-<!-- endbuild -->
-
 <!-- build:js scripts/plugins.js -->
 <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
 <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
@@ -176,8 +188,8 @@
 <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
 <!-- endbuild -->
 
-<!-- build:js scripts/nazhirun.js -->
-<script src="scripts/nazhirun.js"></script>
+<!-- build:js scripts/chayuan-gallery.js -->
+<script src="scripts/chayuan-gallery.js"></script>
 <!-- endbuild -->
 </body>
 </html>
