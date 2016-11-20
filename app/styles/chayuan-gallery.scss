@@ -3,6 +3,7 @@
 // paths
 $lg-path-fonts: '../plugins/lightgallery/fonts';
 $lg-path-images: '../plugins/lightgallery/img';
+$lg-thumb-toggle-bg: rgba(0,0,0,.4);
 @import "../../bower_components/lightgallery/src/sass/lightgallery";
 
 .page-header {
@@ -51,5 +52,10 @@ $lg-path-images: '../plugins/lightgallery/img';
       top: 50%;
       transition: opacity 0.3s ease 0s;
     }
+  }
+}
+.lg-sub-html {
+  h2 {
+    margin: 0;
   }
 }
