@@ -1,0 +1,100 @@
+@import "common/variables";
+
+#main {
+  .top {
+    >div {
+      margin-top: 5px;
+    }
+    .bg {
+      background: url("../images/news/top-bg.png") no-repeat center;
+      background-size: 100% 100%;
+      height: 300px;
+    }
+    .desc {
+      background: rgba(37,99,3,1);
+      height: 300px;
+      color: #fff;
+      padding: 20px 40px;
+      margin: 0;
+      p {
+        line-height: 30px;
+        color: #fff;
+      }
+    }
+  }
+  .items {
+    margin: 10px 0;
+    ul {
+      margin: 0 0 0 100px;
+      padding: 0;
+      list-style-type: none;
+      li {
+        position: relative;
+        border-left: 1px solid #ccc;
+        padding: 0 0 30px 0;
+        &:before {
+          content: ' ';
+          position: absolute;
+          top: 12px;
+          left: -6px;
+          width: 10px;
+          height: 10px;
+          background: #ccc;
+          box-shadow: 0 0 5px $font-color;
+          border-radius: 50%;
+        }
+        .date {
+          display: block;
+          position: absolute;
+          left: -100px;
+          top: 10px;
+        }
+        .title {
+          display: block;
+          font-size: 20px;
+          padding-left: 10px;
+          line-height: 40px;
+        }
+        .content {
+          display: block;
+          padding-left: 12px;
+          color: $font-color;
+        }
+      }
+    }
+    @media screen and (max-width: 768px) {
+      ul {
+        margin: 0 0 0 90px;
+        li {
+          .date {
+            left: -90px;
+          }
+          .title {
+            font-size: 16px;
+          }
+          .content {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .desc {
+    margin-top: 5px;
+    margin-bottom: -30px;
+    padding: 40px 0;
+    background: #f7f7f7 url("../images/index/desc-bg.png") no-repeat center;
+    background-size: cover;
+    h2 {
+      color: rgb(84,137,0);
+      margin: 10px 0;
+      .glyphicon {
+        font-size: 20px;
+      }
+    }
+    p {
+      margin-top: 20px;
+      color: rgb(153,153,153);
+    }
+  }
+}
