@@ -1,0 +1,116 @@
+@import "variables";
+
+/*
+* Hover.css
+*/
+$activeColor: $color-red;
+
+@import "../../../bower_components/hover/scss/options";
+@import "../../../bower_components/hover/scss/mixins";
+@import "../../../bower_components/hover/scss/hacks";
+@import "../../../bower_components/hover/scss/effects/border-transitions/underline-from-center";
+@if $includeClasses {
+  .#{$nameSpace}-underline-from-center {
+    @include underline-from-center();
+  }
+}
+
+.navbar {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 3px 3px #ccc;
+  .navbar-toggle {
+    &:focus, &:hover {
+      background-color: transparent;
+    }
+    span.icon-bar {
+      transition: all .5s;
+      margin-left: -4px;
+      background-color: $color-red;
+    }
+    span.icon-bar:nth-child(2) {
+      transform: rotate(-45deg) translateY(4px) translateX(0px);
+    }
+    span.icon-bar:nth-child(3) {
+      transform: rotate(45deg) translateY(-4px) translateX(0px);
+    }
+    &.collapsed {
+      span.icon-bar {
+        margin-left: 0px;
+      }
+      span.icon-bar:nth-child(2), span.icon-bar:nth-child(3) {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  .container {
+    .bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      display: none;
+    }
+    .navbar-header {
+      .navbar-brand {
+        background: url('#{$img-path}/header-logo.png') no-repeat center;
+        background-size: 100% 100%;
+        width: 350px;
+        height: 59px;
+      }
+    }
+    #navbar_collapse_content {
+      ul {
+        li {
+          a {
+            color: #c52a2d;
+            font-size: 22px;
+            padding: 10px 20px;
+            transition: all .5s;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+    height: 182px;
+    .container {
+      position: relative;
+      height: 180px;
+      background: url("#{$img-path}/header-bg.png") no-repeat;
+      background-size: 100% 100%;
+      .navbar-header {
+        margin-top: 110px;
+      }
+      .collapse {
+        margin-top: 120px;
+        ul {
+          li {
+            border-right: 2px solid #ccc;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    height: 55px;
+    &.navbar-default {
+      .container {
+        .navbar-header {
+          .navbar-brand {
+            width: 250px;
+            height: 50px;
+          }
+        }
+        #navbar_collapse_content {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
