@@ -20,6 +20,7 @@ $activeColor: $color-red;
   .swiper-pagination-bullet {
     background: #fff;
     border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
     opacity: 1;
     width: 16px;
     height: 16px;
@@ -61,6 +62,7 @@ $activeColor: $color-red;
     span.icon-bar {
       transition: all .5s;
       margin-left: -4px;
+      background-color: $color-red;
     }
     span.icon-bar:nth-child(2) {
       transform: rotate(-45deg) translateY(4px) translateX(0px);

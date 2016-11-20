@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="renderer" content="webkit|ie-comp|ie-stand">
   <meta name="description" content="纳之润,普洱茶,朕云堂">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
   <title>纳之润.茶</title>
   <!-- Place favicon.ico in the root directory -->
 
@@ -28,6 +28,15 @@
   <!-- build:css styles/index.css -->
   <link rel="stylesheet" href="styles/index.css">
   <!-- endbuild -->
+
+  <!-- build:js scripts/vendor.js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/swiper.js -->
+  <script src="/bower_components/swiper/dist/js/swiper.js"></script>
+  <!-- endbuild -->
 </head>
 <body>
 <nav class="header navbar navbar-default" role="navigation">
@@ -48,7 +57,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.html" class="hvr-underline-from-center">首页</a></li>
         <li><a href="nazhirun.html" class="hvr-underline-from-center">纳之润</a></li>
-        <li><a href="#" class="hvr-underline-from-center">企业动态</a></li>
+        <li><a href="news.html" class="hvr-underline-from-center">企业动态</a></li>
         <li><a href="#" class="hvr-underline-from-center">关于我们</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -244,15 +253,6 @@
     </div>
   </div>
 </footer>
-
-<!-- build:js scripts/vendor.js -->
-<script src="/bower_components/jquery/dist/jquery.js"></script>
-<script src="/bower_components/modernizr/modernizr.js"></script>
-<!-- endbuild -->
-
-<!-- build:js scripts/vendor/swiper.js -->
-<script src="/bower_components/swiper/dist/js/swiper.js"></script>
-<!-- endbuild -->
 
 <!-- build:js scripts/plugins.js -->
 <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>

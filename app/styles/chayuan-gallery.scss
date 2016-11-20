@@ -13,6 +13,7 @@ $lg-path-images: '../plugins/lightgallery/img';
 #lightgallery {
   a {
     padding: 0;
+    display: block;
     border: 3px solid #FFF;
     border-radius: 3px;
     overflow: hidden;
