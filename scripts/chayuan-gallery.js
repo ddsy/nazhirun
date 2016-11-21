@@ -1,0 +1,1 @@
+"use strict";$(function(){$("#lightgallery").lightGallery({mode:"lg-fade"})});
