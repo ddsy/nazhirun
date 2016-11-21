@@ -9,7 +9,8 @@
     "handlebars": "^4.0.5",
     "animate.css": "^3.5.2",
     "swiper": "^3.4.0",
-    "ihover": "^1.0.0"
+    "ihover": "^1.0.0",
+    "lightgallery": "^1.3.6"
   },
   "overrides": {
     "bootstrap-sass": {
