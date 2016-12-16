@@ -21,6 +21,7 @@ $activeColor: $color-red;
   width: 100%;
   background-color: #fff;
   box-shadow: 0 3px 3px #ccc;
+  margin-bottom: 0;
   .navbar-toggle {
     &:focus, &:hover {
       background-color: transparent;
@@ -78,17 +79,17 @@ $activeColor: $color-red;
 
   @media screen and (min-width: 768px) {
     position: relative;
-    height: 182px;
+    height: 100px;
     .container {
       position: relative;
-      height: 180px;
-      background: url("#{$img-path}/header-bg.png") no-repeat;
+      height: 92px;
+      background: url("#{$img-path}/header-bg.jpg") no-repeat;
       background-size: 100% 100%;
       .navbar-header {
-        margin-top: 110px;
+        margin-top: 40px;
       }
       .collapse {
-        margin-top: 120px;
+        margin-top: 50px;
         ul {
           li {
             border-right: 2px solid #ccc;

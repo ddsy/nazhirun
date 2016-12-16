@@ -63,27 +63,14 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<div id="main" class="container animated fadeIn">
+<div class="container-fluid">
   <div class="row">
     <div class="col-md-12 swiper-header">
+      <script>
+        var filesarr = ['images/index/swiper-1.png', 'images/index/swiper-2.png', 'images/index/swiper-3.png'];
+      </script>
       <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="bg">
-              <img src="images/index/swiper-1.png"/>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="bg">
-              <img src="images/index/swiper-2.png"/>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="bg">
-              <img src="images/index/swiper-3.png"/>
-            </div>
-          </div>
-        </div>
+        <div class="swiper-wrapper"></div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
         <!-- Add Arrows -->
@@ -92,6 +79,8 @@
       </div>
     </div>
   </div>
+</div>
+<div id="main" class="container animated fadeIn">
   <div class="row chandi-title">
     <div class="col-md-4 col-md-offset-4">
       <img src="images/index/shengtaichayuan.png" alt="img">
@@ -99,7 +88,7 @@
   </div>
   <div class="row chandi-content">
     <div class="col-md-4 col-xs-12 col1">
-      <div class="ih-item square effect6 from_top_and_bottom"><a href="#">
+      <div class="ih-item square effect6 from_top_and_bottom"><a href="javascript:void(0);">
         <div class="img">
           <img src="images/index/chayuan-0.png">
         </div>
@@ -113,7 +102,7 @@
       <div class="container-fluid">
         <div class="row row1">
           <div class="col-md-12 col-xs-12">
-            <div class="ih-item square effect6 from_top_and_bottom"><a href="#">
+            <div class="ih-item square effect6 from_top_and_bottom"><a href="javascript:void(0);">
               <div class="img">
                 <img src="images/index/chayuan-1.png">
               </div>
@@ -126,7 +115,7 @@
         </div>
         <div class="row row2">
           <div class="col-md-6 col-xs-12">
-            <div class="ih-item square effect6 from_top_and_bottom"><a href="#">
+            <div class="ih-item square effect6 from_top_and_bottom"><a href="javascript:void(0);">
               <div class="img">
                 <img src="images/index/chayuan-2.png">
               </div>
@@ -137,7 +126,7 @@
             </a></div>
           </div>
           <div class="col-md-6 col-xs-12">
-            <div class="ih-item square effect6 from_top_and_bottom"><a href="#">
+            <div class="ih-item square effect6 from_top_and_bottom"><a href="javascript:void(0);">
               <div class="img">
                 <img src="images/index/chayuan-3.png">
               </div>
@@ -158,6 +147,17 @@
           <div class="col-md-10 col-md-offset-1">
             <h2 class="text-center">诚心诚意做好茶</h2>
             <h4 class="text-center">用心做品质好茶, 确保每一颗茶叶的健康和安全, 我们再国内外市场上赢得了良好的美誉度!</h4>
+          </div>
+        </div>
+        <div class="row search">
+          <div class="col-md-6 col-md-offset-2">
+            <input type="text" id="input_search" placeholder="产品追溯跟踪（标示码: 3a61 7426 329f 3820)" data-trigger="manual"  data-toggle="tooltip" data-placement="bottom" title="选取二维码图片或拍照进行扫描">
+            <a class="qr-btn glyphicon glyphicon-camera" data-toggle="tooltip" data-placement="top" title="选取二维码图片或拍照进行扫描">
+              <input node-type="jsbridge" type="file" id="jsQR" name="myPhoto" />
+            </a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-default" id="btn_search">搜索一下</a>
           </div>
         </div>
         <div class="row content">
@@ -253,6 +253,26 @@
     </div>
   </div>
 </footer>
+
+<!-- build:js scripts/vendor/qrcode.js -->
+<script type="text/javascript" src="plugins/qrcode/grid.js"></script>
+<script type="text/javascript" src="plugins/qrcode/version.js"></script>
+<script type="text/javascript" src="plugins/qrcode/detector.js"></script>
+<script type="text/javascript" src="plugins/qrcode/formatinf.js"></script>
+<script type="text/javascript" src="plugins/qrcode/errorlevel.js"></script>
+<script type="text/javascript" src="plugins/qrcode/bitmat.js"></script>
+<script type="text/javascript" src="plugins/qrcode/datablock.js"></script>
+<script type="text/javascript" src="plugins/qrcode/bmparser.js"></script>
+<script type="text/javascript" src="plugins/qrcode/datamask.js"></script>
+<script type="text/javascript" src="plugins/qrcode/rsdecoder.js"></script>
+<script type="text/javascript" src="plugins/qrcode/gf256poly.js"></script>
+<script type="text/javascript" src="plugins/qrcode/gf256.js"></script>
+<script type="text/javascript" src="plugins/qrcode/decoder.js"></script>
+<script type="text/javascript" src="plugins/qrcode/qrcode.js"></script>
+<script type="text/javascript" src="plugins/qrcode/findpat.js"></script>
+<script type="text/javascript" src="plugins/qrcode/alignpat.js"></script>
+<script type="text/javascript" src="plugins/qrcode/databr.js"></script>
+<!-- endbuild -->
 
 <!-- build:js scripts/plugins.js -->
 <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>

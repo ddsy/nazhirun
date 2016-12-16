@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>QRCODE</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <style type="text/css">
+  </style>
+
+  <script type="text/javascript" src="grid.js"></script>
+  <script type="text/javascript" src="version.js"></script>
+  <script type="text/javascript" src="detector.js"></script>
+  <script type="text/javascript" src="formatinf.js"></script>
+  <script type="text/javascript" src="errorlevel.js"></script>
+  <script type="text/javascript" src="bitmat.js"></script>
+  <script type="text/javascript" src="datablock.js"></script>
+  <script type="text/javascript" src="bmparser.js"></script>
+  <script type="text/javascript" src="datamask.js"></script>
+  <script type="text/javascript" src="rsdecoder.js"></script>
+  <script type="text/javascript" src="gf256poly.js"></script>
+  <script type="text/javascript" src="gf256.js"></script>
+  <script type="text/javascript" src="decoder.js"></script>
+  <script type="text/javascript" src="qrcode.js"></script>
+  <script type="text/javascript" src="findpat.js"></script>
+  <script type="text/javascript" src="alignpat.js"></script>
+  <script type="text/javascript" src="databr.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+</head>
+
+<body>
+<input type="file" accept="image/*" capture="camera" id="jsQR">
+<div id="jsDebug"></div>
+
+<script type="text/javascript">
+  var elDebug = $('#jsDebug'), elQR = $('#jsQR');
+  /* this is my input field */
+  elQR.on('change', function (e) {
+    var filesObj = e.target.files;
+    /* all files*/
+    var fileObj = filesObj[0];
+    /* my one and only file */
+    elDebug.text(qrcode.decode(window.URL.createObjectURL(fileObj)));
+  });
+
+  /* callback */
+  qrcode.callback = qrCallback;
+  function qrCallback(data) {
+    window.location = data;
+  }
+</script>
+</body>
+</html>

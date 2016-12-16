@@ -67,7 +67,19 @@
 </nav>
 <div id="main" class="container animated fadeIn">
   <div class="row top">
-    <div class="bg"></div>
+    <div class="bg">
+      <div class="search">
+        <div class="col-md-6 col-md-offset-2">
+          <input type="text" id="input_search" placeholder="产品追溯跟踪（标示码: 3a61 7426 329f 3820)" data-trigger="manual"  data-toggle="tooltip" data-placement="bottom" title="选取二维码图片或拍照进行扫描">
+          <a class="qr-btn glyphicon glyphicon-camera" data-toggle="tooltip" data-placement="bottom" title="选取二维码图片或拍照进行扫描">
+            <input node-type="jsbridge" type="file" id="jsQR" name="myPhoto" />
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a class="btn btn-default" id="btn_search">搜索一下</a>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="row">
     <div id="items" class="swiper-container">
@@ -89,7 +101,7 @@
           </div>
           <div class="content">
             <div class="desc">纳之润生态茶园</div>
-            <a class="btn btn-default" href="chayuan-gallery.html">查看详情</a>
+            <a class="btn btn-default" href="chayuanlist.html">查看详情</a>
           </div>
         </div>
         <div class="swiper-slide">
@@ -160,6 +172,26 @@
     </div>
   </div>
 </footer>
+
+<!-- build:js scripts/vendor/qrcode.js -->
+<script type="text/javascript" src="plugins/qrcode/grid.js"></script>
+<script type="text/javascript" src="plugins/qrcode/version.js"></script>
+<script type="text/javascript" src="plugins/qrcode/detector.js"></script>
+<script type="text/javascript" src="plugins/qrcode/formatinf.js"></script>
+<script type="text/javascript" src="plugins/qrcode/errorlevel.js"></script>
+<script type="text/javascript" src="plugins/qrcode/bitmat.js"></script>
+<script type="text/javascript" src="plugins/qrcode/datablock.js"></script>
+<script type="text/javascript" src="plugins/qrcode/bmparser.js"></script>
+<script type="text/javascript" src="plugins/qrcode/datamask.js"></script>
+<script type="text/javascript" src="plugins/qrcode/rsdecoder.js"></script>
+<script type="text/javascript" src="plugins/qrcode/gf256poly.js"></script>
+<script type="text/javascript" src="plugins/qrcode/gf256.js"></script>
+<script type="text/javascript" src="plugins/qrcode/decoder.js"></script>
+<script type="text/javascript" src="plugins/qrcode/qrcode.js"></script>
+<script type="text/javascript" src="plugins/qrcode/findpat.js"></script>
+<script type="text/javascript" src="plugins/qrcode/alignpat.js"></script>
+<script type="text/javascript" src="plugins/qrcode/databr.js"></script>
+<!-- endbuild -->
 
 <!-- build:js scripts/plugins.js -->
 <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>

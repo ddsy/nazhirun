@@ -1,0 +1,123 @@
+@import "common/variables";
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  .swiper-button-prev, .swiper-button-next {
+
+    font-size: 50px;
+    font-weight: normal;
+    color: #fff;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .bg {
+      img {
+        transition: all .6s;
+        width: 100%;
+        height: 100%;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+#items {
+  height: 500px;
+  padding: 50px 0;
+  .swiper-slide {
+    width: 380px;
+    .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      img {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transform: scale3d(1, 1, 1);
+        transition: transform 0.4s ease 0s;
+      }
+      .mask {
+        position: absolute;
+        left: 0;
+        background: rgba(0,0,0,.7);
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        opacity: 0;
+        transition: all .5s;
+      }
+    }
+    .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+      opacity: 0;
+      .desc {
+        color: greenyellow;
+        font-size: 32px;
+        position: relative;
+        z-index: 6;
+        transform: translate3d(0,0,0);
+        opacity: 0;
+        transition: all .6s;
+      }
+      .btn {
+        transform: translate3d(0,300px,0);
+        opacity: 0;
+        transition: all .8s;
+        background: transparent;
+        color: #fff;
+      }
+    }
+    &.swiper-slide-active {
+      &:hover {
+        .bg {
+          img {
+            transform: scale3d(1.1, 1.1, 1.1);
+          }
+          .mask {
+            opacity: 1;
+          }
+        }
+        .content {
+          opacity: 1;
+          .desc {
+            transform: translate3d(0,150px,0);
+            opacity: 1;
+          }
+          .btn {
+            transform: translate3d(0,200px,0);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+#main {
+  .top {
+    .bg {
+      background: url("../images/nazhirun/top-bg.png") no-repeat center;
+      width: 100%;
+      height: 240px;
+    }
+  }
+}

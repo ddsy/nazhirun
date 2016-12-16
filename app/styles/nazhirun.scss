@@ -115,9 +115,70 @@
 #main {
   .top {
     .bg {
+      position: relative;
       background: url("../images/nazhirun/top-bg.png") no-repeat center;
       width: 100%;
       height: 240px;
+    }
+  }
+  .search {
+    position: relative;
+    top: 150px;
+    input[node-type=jsbridge]{
+      position: absolute;
+      display: none;
+    }
+    a.qr-btn {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      font-size: 40px;
+      top: 7px;
+      right: 15px;
+      cursor: pointer;
+      color: rgba(27,27,27,1);
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+    }
+    ::-webkit-input-placeholder {
+      color: #000;
+    }
+    ::-moz-placeholder {
+      color: #000;
+    }
+    :-ms-input-placeholder {
+      color: #000;
+    }
+    #input_search {
+      width: 100%;
+      text-transform: uppercase;
+      height: 39px;
+      margin: 5px;
+      text-align: left;
+      display: inline-block;
+      padding-left: 16px;
+      height: 44px;
+      font-size: 14px;
+      border: 1px solid green;
+      border-radius: 2px;
+      background-color: rgba(255,255,255,.5);
+      outline: 0;
+      color: #fff;
+      transition: all .6s;
+      &:hover, &:focus {
+        background-color: rgba(255,255,255,.8);
+      }
+    }
+    .btn {
+      margin-top: 5px;
+      background: rgba(255,255,255,.5);
+      color: #000;
+      border: 1px solid green;
+      padding: 10px 15px;
+      &:hover, &:focus {
+        background-color: rgba(255,255,255,.8);
+      }
     }
   }
 }
